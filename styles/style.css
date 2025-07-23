@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 
-    border: 1px solid slategray;
+    /* border: 1px solid slategray; */
 }
 
 body {
@@ -27,6 +27,11 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fill, minmax(5%, 1fr));
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: dodgerblue;
 }
 
 #header {
@@ -54,6 +59,13 @@ body {
 /* Sidebar */
 #logo {
     grid-row: 1 / span 2;
+
+    padding: 12px 16px;
+    font-size: 1.8rem;
+}
+
+#sidebar > .item {
+    padding: 0px 24px;
 }
 
 /* Header */
