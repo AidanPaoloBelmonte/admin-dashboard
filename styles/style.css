@@ -35,7 +35,7 @@ body {
 }
 
 #header {
-    padding: 8px;
+    padding: 12px 32px 0px 32px;
 
     grid-area: 1 / 2 / 2 / 6;
 
@@ -43,6 +43,8 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 8px;
+
+    box-shadow: 0px 1px 6px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
 #content {
@@ -71,6 +73,19 @@ body {
 /* Header */
 #search {
     grid-column: 1 / span 10;
+
+    display: flex;
+    align-items: center;
+}
+
+#search input {
+    flex: 1 auto;
+
+    padding-left: 10px;
+    border: 0px;
+    border-radius: 12px;
+
+    background-color: whitesmoke;
 }
 
 #bell {
@@ -83,26 +98,57 @@ body {
 
 #profile {
     grid-column: 14 / span 3;
+
+    font-weight: bold;
 }
 
 #greeter {
     grid-column: 1 / span 6;
     grid-row: 2 / -1;
+
+    font-weight: bold;
+}
+
+#greeter span {
+    font-size: 1.8rem;
 }
 
 #new {
     grid-column: 11 / span 2;
-    grid-row: 2 / -1;
+    grid-row: 2 / 4;
 }
 
 #upload {
     grid-column: 13 / span 2;
-    grid-row: 2 / -1;
+    grid-row: 2 / 4;
 }
 
 #share {
     grid-column: 15 / span 2;
-    grid-row: 2 / -1;
+    grid-row: 2 / 4;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.buttons {
+    width: 90%;
+    height: 50%;
+}
+
+#header button {
+    width: 100%;
+    height: 100%;
+
+    border: 0px;
+    border-radius: 16px;
+
+    color: white;
+    font-weight: bold;
+
+    background-color: dodgerblue;
 }
 
 /* Main */
