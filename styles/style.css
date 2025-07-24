@@ -123,15 +123,15 @@ body {
 }
 
 #bell {
-    grid-column: 12 / span 1;
-}
-
-#avatar {
     grid-column: 13 / span 1;
 }
 
+#avatar {
+    grid-column: 14 / span 1;
+}
+
 #profile {
-    grid-column: 14 / span 3;
+    grid-column: 15 / span 2;
 
     font-weight: bold;
 }
@@ -145,6 +145,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 24px;
 }
 
 #greeter span {
@@ -189,6 +190,20 @@ body {
     background-color: dodgerblue;
 }
 
+.cropped-image {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.big.cropped-image {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
 /* Main */
 #content h2,
 #content h3 {
@@ -223,7 +238,9 @@ body {
 #projects > .content-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
-    grid-template-rows: repeat(auto-fill, 200px;);
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
 
     gap: 16px;
 }
@@ -289,4 +306,9 @@ hr {
     width: 100%;
     border: 1px thin black;
     margin: 0 auto;
+}
+
+.user-profile {
+    display: flex;
+    gap: 16px;
 }
