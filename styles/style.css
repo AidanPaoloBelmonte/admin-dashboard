@@ -102,7 +102,13 @@ body {
     grid-column: 1 / span 10;
 
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    gap: 8px;
+}
+
+#search object {
+    margin: 0px;
 }
 
 #search input {
