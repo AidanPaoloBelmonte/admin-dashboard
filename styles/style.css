@@ -1,6 +1,10 @@
+/* Imports */
+
+/* Global */
 * {
     box-sizing: border-box;
 
+    font-family: Inter, sans-serif, system-ui;
     /* border: 1px solid slategray; */
 }
 
@@ -87,6 +91,7 @@ body {
     border: 0px;
     border-radius: 12px;
 
+    font-size: 1.1rem;
     background-color: whitesmoke;
 }
 
@@ -109,6 +114,10 @@ body {
     grid-row: 2 / -1;
 
     font-weight: bold;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #greeter span {
@@ -163,8 +172,14 @@ body {
     font-size: 1.2rem;
 }
 
+#content p {
+    color: darkslategray;
+
+    margin: 0;
+}
+
 #announcements h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 #projects {
@@ -207,7 +222,7 @@ body {
 
 .description h3 {
     margin: 0px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .description p {
